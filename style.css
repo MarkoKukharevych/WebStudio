@@ -1,0 +1,44 @@
+a.logo {
+    background:white;
+}
+
+li {
+    color:#212121;
+}
+
+a.link {
+    color:#2196F3;
+}
+
+button.btn {
+    background-color:#2196F3;
+    color:white;
+}
+
+h1 {
+    color: #FFF;
+}
+
+section.page {
+    background: #2F303A;
+}
+
+h2,h3 {
+    color: #212121;
+}
+
+p {
+    color:#757575;
+}
+
+footer {
+    background: #2F303A;
+}
+
+address {
+    color:#FFF;
+}
+
+li {
+    color:rgba(255, 255, 255, 0.60);
+}
