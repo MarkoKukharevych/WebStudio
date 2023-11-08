@@ -77,9 +77,13 @@ span {
     line-height: 30px;
     /* 187.5% */
     letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: #2196F3;
+    /* shadow-middle */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-button:hover {
+.nav__button:hover {
     color: #FFF;
     text-align: center;
     font-family: Roboto;
@@ -88,9 +92,6 @@ button:hover {
     line-height: 30px;
     /* 187.5% */
     letter-spacing: 0.96px;
-}
-
-#button {
     border-radius: 4px;
     background: #2196F3;
 
@@ -100,44 +101,98 @@ button:hover {
 
 /*works*/
 
-.works {}
+.works__list {
+    font-family: 'Roboto', sans-serif;
+}
 
-.works__list {}
+.works__subtitle {
+    color: var(--title-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
 
-.works__subtitle {}
-
-.works__text {}
+.works__text {
+    color: var(--text-colour);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    /* 171.429% */
+    letter-spacing: 0.42px;
+}
 
 /*photos*/
-.photos {}
 
-.photos__subtitle {}
+.photos__subtitle {
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
 
-.photos__list {}
-
-.photos__item {}
-
-.photos__img {}
+.photos__img {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+}
 
 /*team*/
 
-.team {}
+.team__title {
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
 
-.team__title {}
+.team__list {
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
 
-.team__list {}
+.team__item {
+    width: 270px;
+    height: 368px;
+    flex-shrink: 0;
+}
 
-.team__item {}
+.team__subtitle {
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+}
 
-.team__subtitle {}
+.team__text {
+    color: var(--text-colour);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
 
-.team__text {}
+team__img {
+    width: 270px;
+    height: 260px;
+    flex-shrink: 0;
+}
 
 /*nav*/
-
-.nav__list {}
-
-.nav__item {}
 
 .nav__button:hover {
     color: #FFF;
@@ -152,26 +207,76 @@ button:hover {
 
 /*project*/
 
-.project {}
+.project__list {
+    display: flex;
+    width: 1600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 94px;
+}
 
-.project__list {}
+.project__item {
+    width: 370px;
+    height: 404px;
+    flex-shrink: 0;
+}
 
-.project__item {}
+.project__subtitle {
+    color: var(--title-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 200% */
+    letter-spacing: 1.08px;
+}
 
-.project__subtitle {}
-
-.project__text {}
+.project__text {
+    color: var(--text-colour);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.48px;
+}
 
 /*footer*/
 
-.footer {}
+.footer {
+    width: 1600px;
+    height: 252px;
+    flex-shrink: 0;
+    background: #2F303A;
+}
 
-.header__logo {}
+.header__logo-colored {
+    color: var(--link-color);
+}
 
-.header__logo-colored {}
+.footer__list {
+    width: 231px;
+    height: 81px;
+    flex-shrink: 0;
+}
 
-.footer__list {}
+.footer__adress {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    /* 171.429% */
+    letter-spacing: 0.42px;
+}
 
-.footer__adress {}
-
-.footer__link {}
+.footer__link {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    /* 171.429% */
+    letter-spacing: 0.42px;
+}
