@@ -10,12 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header class="header">
-        <a class="header__logo" href="index.html"></a><span class="header__logo-colored">Web</span><span>Studio</span>
+        <a class="header__logo" href="index.html"><span class="header__logo--colored">Web</span><span>Studio</span></a>
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a class="header__link" href="#">Студія</a></li>
@@ -33,37 +33,39 @@
         <section class="hero">
             <!--HERO-->
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero__btn" type="button">Замовити послугу</button>
+            <button id="button" class="hero__btn--text" type="button">Замовити послугу</button>
         </section>
         <!--BODY-->
-        <section class="body">
-            <ul class="body__list">
-                <li class="body__item">
-                    <h3 class="body__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="body__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+        <section class="works">
+            <ul class="works__list">
+                <li class="works">
+                    <h3 class="works">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="works">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                     </p>
                 </li>
-                <li class="body__item">
-                    <h3 class="body__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="body__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                <li class="works">
+                    <h3 class="works__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="works__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                    </p>
                 </li>
-                <li class="body__item">
-                    <h3 class="body__subtitle">ПЛАНУВАННЯ</h3>
-                    <p class="body__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                <li class="works">
+                    <h3 class="works__subtitle">ПЛАНУВАННЯ</h3>
+                    <p class="works__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li class="body__item">
-                    <h3 class="body__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="body__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                <li class="works">
+                    <h3 class="works__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="works__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                    </p>
                 </li>
             </ul>
 
         </section>
-        <section class="works">
-            <h2 class="works__subtitle">Чим ми займаємося</h2>
-            <ul class="works__list">
-                <li class="works__item"><img src="./images/keyboard.jpg" alt="keyboard"></li>
-                <li class="works__item"><img src="./images/telephone.jpg" alt="telephone"></li>
-                <li class="works__item"><img src="./images/tablet.jpg" alt="tablet"></li>
+        <section class="photos">
+            <h2 class="photos__subtitle">Чим ми займаємося</h2>
+            <ul class="photos__list">
+                <li class="photos__item"><img class="photos__img" src="./images/keyboard.jpg" alt="keyboard"></li>
+                <li class="photos__item"><img class="photos__img" src="./images/telephone.jpg" alt="telephone"></li>
+                <li class="photos__item"><img class="photos__img" src="./images/tablet.jpg" alt="tablet"></li>
             </ul>
         </section>
         <section class="team">
@@ -91,12 +93,12 @@
     <!--footer-->
     <footer class="footer">
         <a class="header__logo" href="index.html"></a><span class="header__logo-colored">Web</span><span>Studio</span>
-        <ul>
-            <li>
+        <ul class="footer__list">
+            <li class="footer__list">
                 <address class="footer__adress">м. Київ, пр-т Лесі Українки, 26</address>
             </li>
-            <li class="footer__list"><a href="mailto:">info@devstudio.com</a></li>
-            <li class="footer__list"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="footer__list"><a class="footer__link" href="mailto:">info@devstudio.com</a></li>
+            <li class="footer__list"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </footer>
 </body>
