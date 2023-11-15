@@ -1,6 +1,6 @@
 :root {
     --link-color: #2196F3;
-    --text-colour: #757575;
+    --text-color: #757575;
     --title-color: #212121;
 }
 
@@ -29,7 +29,7 @@ body {
 .header__nav-item {}
 
 .header__nav-link {
-    color: var(--text-colour);
+    color: var(--title-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -40,7 +40,7 @@ body {
 .header__contact-item {}
 
 .header__contact-link {
-    color: var(--title-colo);
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -50,6 +50,7 @@ body {
 
 .hero {
     background: #2F303A;
+    height: 600px;
 }
 
 .hero__title {
@@ -57,19 +58,17 @@ body {
     text-align: center;
     font-size: 44px;
     font-weight: 900;
-    line-height: 60px;
-    /* 136.364% */
+    line-height: 136.364%;
     letter-spacing: 2.64px;
     text-transform: uppercase;
 }
 
-.hero__btn--text {
+.hero__btn {
     color: #FFF;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
-    /* 187.5% */
+    line-height: 187.5%;
     letter-spacing: 0.96px;
     border-radius: 4px;
     background: #2196F3;
@@ -82,8 +81,7 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
-    /* 187.5% */
+    line-height: 187.5%;
     letter-spacing: 0.96px;
     border-radius: 4px;
     background: #2196F3;
@@ -111,8 +109,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.71;
-    /* 171.429% */
+    line-height: 171.429%;
     letter-spacing: 0.42px;
 }
 
@@ -142,18 +139,9 @@ body {
     letter-spacing: 1.08px;
 }
 
-.team__list {
-    color: var(--title-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-}
+.team__list {}
 
-.team__item {
-    width: 270px;
-    height: 368px;
-}
+.team__item {}
 
 .team__subtitle {
     color: var(--title-color);
@@ -171,23 +159,41 @@ body {
     letter-spacing: 0.48px;
 }
 
-team__img {
+.team__img {
     width: 270px;
     height: 260px;
-    flex-shrink: 0;
 }
 
-/*nav*/
+/*footer*/
 
-.nav__button:hover {
+.footer {
+    height: 252px;
+    background: #2F303A;
+}
+
+.header__logo-colored {
+    color: var(--link-color);
+}
+
+.footer__list {}
+
+.footer__adress {
     color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    /* 162.5% */
-    letter-spacing: 0.48px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
 }
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+}
+
+/*portfolio*/
 
 /*project*/
 
@@ -210,8 +216,7 @@ team__img {
     color: var(--title-color);
     font-size: 18px;
     font-weight: 700;
-    line-height: 36px;
-    /* 200% */
+    line-height: 200%;
     letter-spacing: 1.08px;
 }
 
@@ -219,44 +224,38 @@ team__img {
     color: var(--text-colour);
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
-    /* 187.5% */
+    line-height: 187.5%;
     letter-spacing: 0.48px;
 }
 
-/*footer*/
+/*nav*/
 
-.footer {
-    width: 1600px;
-    height: 252px;
-    flex-shrink: 0;
-    background: #2F303A;
+.nav__item {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 162.5% */
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    width: 125px;
+    height: 38px;
 }
 
-.header__logo-colored {
-    color: var(--link-color);
-}
-
-.footer__list {
-    width: 231px;
-    height: 81px;
-    flex-shrink: 0;
-}
-
-.footer__adress {
+.nav__button:hover {
     color: #FFF;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    /* 171.429% */
-    letter-spacing: 0.42px;
-}
-
-.footer__link {
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    /* 171.429% */
-    letter-spacing: 0.42px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162.5%;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    background: #2196F3;
+    /* shadow-middle */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
