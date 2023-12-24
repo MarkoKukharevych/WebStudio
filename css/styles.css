@@ -15,7 +15,7 @@ body {
     outline: 1px solid red;
 }
 
-section {
+.section {
     margin-bottom: 94px;
 }
 
@@ -80,6 +80,8 @@ section {
 /*hero*/
 
 .hero {
+    display: flex;
+    align-items: center;
     background: #2F303A;
     height: 600px;
 }
@@ -92,6 +94,7 @@ section {
     line-height: 136.364%;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    width: 696px;
 }
 
 .hero__btn {
@@ -109,6 +112,7 @@ section {
     height: 50px;
     display: block;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 /*works*/
@@ -173,6 +177,7 @@ section {
 /*team*/
 
 .team {
+    display: flex;
     background-color: #F5F4FA;
 }
 
@@ -182,7 +187,7 @@ section {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    margin-bottom: 50px;
+    margin-top: 94px;
 }
 
 .team__list {
@@ -193,6 +198,8 @@ section {
 .team__item {
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
+    margin-bottom: 94px;
+    margin-top: 50px;
 }
 
 .team__item__content {
@@ -275,11 +282,6 @@ section {
     flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
-.project__img {
-    width: 370px;
-    height: 294px;
-}
-
 .project__subtitle {
     color: var(--title-color);
     font-size: 18px;
@@ -299,6 +301,9 @@ section {
 }
 
 /*nav*/
+.nav {
+    margin-top: 94px;
+}
 
 .nav__list {
     display: flex;
@@ -308,7 +313,7 @@ section {
 
 }
 
-.nav__item {
+.nav__button {
     margin: 6px 25px;
     color: #212121;
     text-align: center;
@@ -321,18 +326,12 @@ section {
     letter-spacing: 0.48px;
     border-radius: 4px;
     padding: 6px 22px;
+    background-color: #F5F4FA;
 }
 
+.nav__item {}
+
 .nav__button:hover {
-    margin: 6px 25px;
     color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 162.5%;
-    letter-spacing: 0.48px;
-    border-radius: 4px;
     background: #2196F3;
 }
