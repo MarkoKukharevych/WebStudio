@@ -305,6 +305,7 @@ body {
 /*nav*/
 .nav {
     margin-top: 94px;
+    margin-bottom: 50px;
 }
 
 .nav__list {
@@ -312,11 +313,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-
 }
 
 .nav__button {
-    margin: 6px 25px;
     color: #212121;
     text-align: center;
     font-family: Roboto;
