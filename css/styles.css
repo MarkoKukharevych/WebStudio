@@ -83,7 +83,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/hero/Img\ \(1\).jpg);
+    background-image: url(../images/hero/img.jpg);
     height: 600px;
 }
 
@@ -137,25 +137,25 @@ body {
 }
 
 .works__item:nth-child(1)::before {
-    background-image: url(../css/svg/works/antenna-1.png);
+    background-image: url(../css/svg/works/antenna.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .works__item:nth-child(2)::before {
-    background-image: url(../css/svg/works/clock-1.png);
+    background-image: url(../css/svg/works/clock.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .works__item:nth-child(3)::before {
-    background-image: url(../css/svg/works/diagram-1.png);
+    background-image: url(../css/svg/works/diagram.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .works__item:nth-child(4)::before {
-    background-image: url(../css/svg/works/astronaut-1.png);
+    background-image: url(../css/svg/works/astronaut.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -316,6 +316,10 @@ body {
     margin-top: 30px;
     flex-basis: calc((100% - 3 * 30px) / 3);
     border: 1px solid #EEE;
+}
+
+.project__item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .project__subtitle {
