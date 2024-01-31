@@ -83,7 +83,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../css/hero.png/Img\ Overlay.png), url(../images/hero/img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/img.jpg);
     height: 600px;
 }
 
