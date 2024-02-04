@@ -60,6 +60,10 @@ body {
     letter-spacing: 0.28px;
 }
 
+.header__nav-link:hover {
+    color: var(--link-color);
+}
+
 .header__contact-list {
     margin-left: 344px;
     display: flex;
@@ -75,6 +79,10 @@ body {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+}
+
+.header__contact-link:hover {
+    color: var(--link-color);
 }
 
 /*hero*/
@@ -267,7 +275,8 @@ body {
 /*footer*/
 
 .footer {
-    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
 
@@ -325,20 +334,25 @@ body {
 
 .project__subtitle {
     color: var(--title-color);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1.08px;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 
 .project__text {
     color: #757575;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.48px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 /*nav*/
