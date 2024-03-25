@@ -65,9 +65,10 @@ body {
 }
 
 .header__contact-list {
-    margin-left: 344px;
+    margin-left: 318px;
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 30px;
 }
 
 .header__contact-item {
@@ -77,22 +78,25 @@ body {
 }
 
 .header__contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--text-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
 }
 
-.header__contact-link:hover {
+.header__contact-link:hover,
+.header__contact-link:focus {
     color: var(--link-color);
 }
 
+
 .header__contact-icons {
-    display: block;
-    fill: #757575;
-    width: 16px;
-    height: 12px;
+    fill: currentColor;
 }
+
 
 /*hero*/
 
@@ -285,22 +289,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 22px;
+    gap: 10px;
     margin-bottom: 42px;
 }
 
 .team__icons-item {}
 
 .team__icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
 }
 
-.team__icons-link:hover {
+.team__icons-link:hover,
+.team__icons-link:focus {
     background-color: #2196F3;
-    width: 44px;
-    height: 44px;
 }
 
 .sociale__icons {
@@ -331,17 +337,40 @@ body {
     margin-bottom: 50px;
 }
 
+.client__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--link-color);
+}
+
+.client__item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+}
+
+.client__item:hover {
+    border-color: var(--link-color);
+}
+
 .client__icons {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
     align-items: center;
     justify-content: center;
-    margin-left: 70px;
+    text-align: center;
+    margin: 16px 32px;
 }
 
 .client__icons:hover {
-    fill: #2196F3;
+    fill: currentColor;
 }
 
 /*footer*/
@@ -394,10 +423,18 @@ body {
 
 }
 
+.footer__icons .team__icons-link {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.footer__icons:hover .team__icons-link:hover {
+    fill: var(--link-color);
+}
+
 .footer__icons {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 10px;
     margin-top: 20px;
 }
 
