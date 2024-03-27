@@ -24,101 +24,147 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Студія</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="./portfoli.html">Портфоліо</a>
-                    </li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="./portfoli.html">Портфоліо</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="#">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="header__contact-list">
-                <li class="header__contact-item"><a class="header__contact-link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="header__contact-item">
+                    <a class="header__contact-link" href="mailto:info@devstudio.com">
+                        <svg class="header__contact-icons" width="16px" height="12px">
+                            <use href='./images/icons/symbol-defs.svg#icon-envelope-hover'></use>
+                        </svg>info@devstudio.com
+                    </a>
+
                 </li>
-                <li class="header__contact-item"><a class="header__contact-link" href="tel:+380961111111">+38 096
-                        111 11
-                        11</a></li>
+                <li class="header__contact-item"><a class="header__contact-link" href="tel:+380961111111">
+                        <svg class="header__contact-icons" width="10px" height="16px">
+                            <use href='./images/icons/symbol-defs.svg#icon-smartphone'></use>
+                        </svg>+38 096 111 11
+                        11
+                    </a>
+                </li>
             </ul>
         </div>
-    </header>
-    <!--Main-->
-    <main>
-        <section class="nav">
-            <div class="container">
-                <ul class="nav__list">
-                    <li class="nav__item"><button class="nav__button" type="button">Усі</button></li>
-                    <li class="nav__item"><button class="nav__button" type="button">Веб-сайти</button></li>
-                    <li class="nav__item"><button class="nav__button" type="button">Додатки</button></li>
-                    <li class="nav__item"><button class="nav__button" type="button">Дизайн</button></li>
-                    <li class="nav__item"><button class="nav__button" type="button">Маркетинг</button></li>
-                </ul>
-            </div>
-        </section>
-        <section class="project section">
-            <div class="container">
-                <ul class="project__list">
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/computer.jpg"
-                            alt="notebook">
-                        <h3 class="project__subtitle">Технокряк</h3>
-                        <p class="project__text">Веб-сайт</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/basketball.jpg"
-                            alt="basketball player">
-                        <h3 class="project__subtitle">Постер New Orlean vs Golden Star</h3>
-                        <p class="project__text">Дизайн</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/seafood.jpg"
-                            alt="shark">
-                        <h3 class="project__subtitle">Ресторан Seafood</h3>
-                        <p class="project__text">Додаток</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/headphones.jpg"
-                            alt="headphones">
-                        <h3 class="project__subtitle">Проєкт Prime</h3>
-                        <p class="project__text">Маркетинг</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/box.jpg"
-                            alt="boxes">
-                        <h3 class="project__subtitle">Проєкт Boxes</h3>
-                        <p class="project__text">Додаток</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/computer2.jpg"
-                            alt="computer">
-                        <h3 class="project__subtitle">Inspiration has no Borders</h3>
-                        <p class="project__text">Веб-сайт</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/papernew.jpg"
-                            alt="papernews">
-                        <h3 class="project__subtitle">Видання Limited Edition</h3>
-                        <p class="project__text">Дизайн</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/lab.jpg"
-                            alt="project LAB">
-                        <h3 class="project__subtitle">Проєкт LAB</h3>
-                        <p class="project__text">Маркетинг</p>
-                    </li>
-                    <li class="project__item"><img class="project__img" src="./images/portfolio/projects/notebook.jpg"
-                            alt="notebook2">
-                        <h3 class="project__subtitle">Growing Business</h3>
-                        <p class="project__text">Додаток</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        <!--Main-->
+        <main>
+            <section class="nav">
+                <div class="container">
+                    <ul class="nav__list">
+                        <li class="nav__item"><button class="nav__button" type="button">Усі</button></li>
+                        <li class="nav__item"><button class="nav__button" type="button">Веб-сайти</button></li>
+                        <li class="nav__item"><button class="nav__button" type="button">Додатки</button></li>
+                        <li class="nav__item"><button class="nav__button" type="button">Дизайн</button></li>
+                        <li class="nav__item"><button class="nav__button" type="button">Маркетинг</button></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="project section">
+                <div class="container">
+                    <ul class="project__list">
+                        <li class="project__item"><img class="project__img"
+                                src="./images/portfolio/projects/computer.jpg" alt="notebook">
+                            <h3 class="project__subtitle">Технокряк</h3>
+                            <p class="project__text">Веб-сайт</p>
+                        </li>
+                        <li class="project__item"><img class="project__img"
+                                src="./images/portfolio/projects/basketball.jpg" alt="basketball player">
+                            <h3 class="project__subtitle">Постер New Orlean vs Golden Star</h3>
+                            <p class="project__text">Дизайн</p>
+                        </li>
+                        <li class="project__item"><img class="project__img"
+                                src="./images/portfolio/projects/seafood.jpg" alt="shark">
+                            <h3 class="project__subtitle">Ресторан Seafood</h3>
+                            <p class="project__text">Додаток</p>
+                        </li>
+                        <li class="project__item"><img class="project__img"
+                                src="./images/portfolio/projects/headphones.jpg" alt="headphones">
+                            <h3 class="project__subtitle">Проєкт Prime</h3>
+                            <p class="project__text">Маркетинг</p>
+                        </li>
+                        <li class="project__item"><img class="project__img" src="./images/portfolio/projects/box.jpg"
+                                alt="boxes">
+                            <h3 class="project__subtitle">Проєкт Boxes</h3>
+                            <p class="project__text">Додаток</p>
+                        </li>
+                        <li class="project__item"><img class="project__img"
+                                src="./images/portfolio/projects/computer2.jpg" alt="computer">
+                            <h3 class="project__subtitle">Inspiration has no Borders</h3>
+                            <p class="project__text">Веб-сайт</p>
+                        </li>
+                        <li class="project__item"><img class="project__img"
+                                src="./images/portfolio/projects/papernew.jpg" alt="papernews">
+                            <h3 class="project__subtitle">Видання Limited Edition</h3>
+                            <p class="project__text">Дизайн</p>
+                        </li>
+                        <li class="project__item"><img class="project__img" src="./images/portfolio/projects/lab.jpg"
+                                alt="project LAB">
+                            <h3 class="project__subtitle">Проєкт LAB</h3>
+                            <p class="project__text">Маркетинг</p>
+                        </li>
+                        <li class="project__item"><img class="project__img"
+                                src="./images/portfolio/projects/notebook.jpg" alt="notebook2">
+                            <h3 class="project__subtitle">Growing Business</h3>
+                            <p class="project__text">Додаток</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-    <!--footer-->
-    <footer class="footer">
-        <div class="container">
-            <a class="header__logo" href="index.html">Web<span class="footer__logo-colored">Studio</span></a>
-
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <address class="footer__adress">м. Київ, пр-т Лесі Українки, 26</address>
-                </li>
-                <li class="footer__item"><a class="footer__link" href="mailto:">info@devstudio.com</a></li>
-                <li class="footer__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </div>
-    </footer>
+        <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__div">
+                    <div class="footer__div-logo">
+                        <a class="header__logo" href="index.html">Web<span
+                                class="footer__logo-colored">Studio</span></a>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <address class="footer__adress">м. Київ, пр-т Лесі Українки, 26</address>
+                            </li>
+                            <li class="footer__item"><a class="footer__link" href="mailto:">info@devstudio.com</a></li>
+                            <li class="footer__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11
+                                    11</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__div-link">
+                        <h3 class="footer__link-subtitle">приєднуйтесь</h3>
+                        <ul class="footer__icons">
+                            <li class="footer__icons-item">
+                                <a href="" class="team__icons-link">
+                                    <svg class="social__icons">
+                                        <use href='./images/icons/symbol-defs.svg#icon-instagram'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team__icons-item">
+                                <a href="" class="team__icons-link">
+                                    <svg class="social__icons">
+                                        <use href='./images/icons/symbol-defs.svg#icon-twitter'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team__icons-item">
+                                <a href="" class="team__icons-link">
+                                    <svg class="social__icons">
+                                        <use href='./images/icons/symbol-defs.svg#icon-facebook'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team__icons-item">
+                                <a href="" class="team__icons-link">
+                                    <svg class="social__icons">
+                                        <use href='./images/icons/symbol-defs.svg#icon-linkedin'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

@@ -302,22 +302,21 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    fill: #AFB1B8;
 }
 
 .team__icons-link:hover,
 .team__icons-link:focus {
     background-color: #2196F3;
+    fill: #FFF;
 }
 
 .sociale__icons {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
 }
 
-.sociale__icons:hover {
-    fill: #FFF;
-}
+.sociale__icons:hover {}
 
 /* client */
 
@@ -353,25 +352,24 @@ body {
     height: 92px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
 }
 
 .client__item:hover {
     border-color: var(--link-color);
+    fill: currentColor;
 }
 
 .client__icons {
     width: 106px;
     height: 60px;
-    fill: #AFB1B8;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 16px 32px;
 }
 
-.client__icons:hover {
-    fill: currentColor;
-}
+.client__icons:hover {}
 
 /*footer*/
 
@@ -427,8 +425,8 @@ body {
     background-color: rgba(255, 255, 255, 0.10);
 }
 
-.footer__icons:hover .team__icons-link:hover {
-    fill: var(--link-color);
+.footer__icons .team__icons-link:hover {
+    background-color: var(--link-color);
 }
 
 .footer__icons {
@@ -507,14 +505,14 @@ body {
 
 /*nav*/
 .nav {
+    display: flex;
+    margin-left: 600px;
     margin-top: 94px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .nav__list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 8px;
 }
 
