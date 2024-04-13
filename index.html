@@ -55,7 +55,7 @@
             <!--HERO-->
             <div class="container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero__btn" type="button">Замовити послугу</button>
+                <button class="hero__btn" type="button" data-open-modal>Замовити послугу</button>
             </div>
         </section>
 
@@ -352,6 +352,37 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="modal__form">
+                <label for="user__name">
+                    Ім'я
+                    <input class="form__input" type="text" name="text" id="user__name" min="2" max="12" />
+                </label>
+                <label for="user__phone">
+                    Телефон
+                    <input class="form__input" type="password" name="password" id="user__phone" min="10" max="14" />
+                </label>
+                <label for="user__email">
+                    Пошта
+                    <input class="form__input" type="email" name="email" id="user__email" />
+                </label>
+                <label for="coment">
+                    Коментар
+                    <input class="form__input" type="text" name="text" id="coment" min="10" max="200"
+                        placeholder="Введіть текст" />
+                </label>
+                <label>
+                    <h3 class="label__title">Погоджуюся з розсилкою та приймаю <a class="label__link" href="#">Умови
+                            договору</a></h3>
+                    <input class="form__input" type="checkbox" name="security"
+                        value="Погоджуюся з росилкою та приймаю Умови договору">
+                </label>
+                <button class="btn" data-close-modal>Відправити</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
