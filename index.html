@@ -55,7 +55,7 @@
             <!--HERO-->
             <div class="container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero__btn" type="button" data-open-modal>Замовити послугу</button>
+                <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -352,37 +352,49 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+
+    <!--modal-->
+
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <button class="button__modal" data-modal-close>
+                <svg class="button__svg">
+                    <use class="button__use" href="./images/icons/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
             <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="modal__form">
-                <label for="user__name">
+                <label class="label__modal" for="user__name">
                     Ім'я
-                    <input class="form__input" type="text" name="text" id="user__name" min="2" max="12" />
+                    <input class="form__input" type="text" name="text" id="user__name" />
                 </label>
-                <label for="user__phone">
+                <label class="label__modal" for="user__phone">
                     Телефон
-                    <input class="form__input" type="password" name="password" id="user__phone" min="10" max="14" />
+                    <input class="form__input" type="password" name="password" id="user__phone" />
                 </label>
-                <label for="user__email">
+                <label class="label__modal" for="user__email">
                     Пошта
                     <input class="form__input" type="email" name="email" id="user__email" />
                 </label>
-                <label for="coment">
+                <label class="label__four" for="coment">
                     Коментар
-                    <input class="form__input" type="text" name="text" id="coment" min="10" max="200"
-                        placeholder="Введіть текст" />
+                    <textarea class="text__label" name="text" id="coment" cols="30" rows="10"
+                        placeholder="Введіть текст"></textarea>
                 </label>
                 <label>
-                    <h3 class="label__title">Погоджуюся з розсилкою та приймаю <a class="label__link" href="#">Умови
-                            договору</a></h3>
-                    <input class="form__input" type="checkbox" name="security"
-                        value="Погоджуюся з росилкою та приймаю Умови договору">
+                    <div class="label__input">
+                        <h3 class="label__title">Погоджуюся з розсилкою та приймаю <a class="label__link" href="#">Умови
+                                договору</a></h3>
+                        <input class="input__div" type="checkbox" name="security"
+                            value="Погоджуюся з росилкою та приймаю Умови договору">
+                    </div>
                 </label>
                 <button class="btn" data-close-modal>Відправити</button>
             </form>
         </div>
     </div>
+
+    <script src="./module.js"></script>
 </body>
 
 </html>
