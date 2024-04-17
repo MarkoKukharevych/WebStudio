@@ -536,9 +536,8 @@ body {
     height: 18px;
 }
 
-.button__modal:hover {
-    fill: #2196F3;
-    border: 1px solid #2196F3;
+.button__svg:hover {
+    fill: #188CE8;
 }
 
 .button__use {
@@ -576,6 +575,10 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.20);
 }
 
+.form__input:hover {
+    border-color: #188CE8;
+}
+
 .label__title {
     width: 400px;
     height: 24px;
@@ -607,6 +610,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
     gap: 5px;
+}
+
+.label__svg:hover {
+    fill: #188CE8;
 }
 
 .input__div {
@@ -654,6 +661,18 @@ body {
     letter-spacing: 0.12px;
     padding-top: 12px;
     padding-left: 16px;
+}
+
+.label__thumb {
+    position: relative;
+}
+
+.label__svg {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
 }
 
 .btn {
