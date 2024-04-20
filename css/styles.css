@@ -481,6 +481,65 @@ body {
     display: flex;
 }
 
+.footer__modal {
+    margin-left: 93px;
+    margin-top: 15px;
+}
+
+.footer__label-title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__form {
+    position: relative;
+}
+
+.footer__label {
+    width: 358px;
+    height: 50px;
+}
+
+.footer__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background-color: transparent;
+    padding-left: 16px;
+}
+
+.footer__form-button {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    padding-right: 35px;
+    margin-left: 12px;
+}
+
+.footer__form-svg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 30px;
+    top: 13px;
+}
+
 /* module */
 
 .backdrop {
@@ -575,10 +634,6 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.20);
 }
 
-.form__input:hover {
-    border-color: #188CE8;
-}
-
 .label__title {
     width: 400px;
     height: 24px;
@@ -605,6 +660,10 @@ body {
     margin-left: 40px;
     margin-right: 40px;
 }
+
+/* .label__modal:hover .label__modal:focus {
+    border-color: #188CE8;
+} */
 
 .label__input {
     display: flex;
@@ -665,6 +724,7 @@ body {
 
 .label__thumb {
     position: relative;
+    border-color: #188CE8;
 }
 
 .label__svg {
@@ -673,6 +733,10 @@ body {
     top: 10px;
     width: 18px;
     height: 18px;
+}
+
+.label__svg:hover .label__svg:focus {
+    fill: currentColor;
 }
 
 .btn {
