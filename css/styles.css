@@ -159,25 +159,25 @@ body {
 }
 
 .works__item:nth-child(1)::before {
-    background-image: url(../css/svg/works/antenna.png);
+    background-image: url(../images/works/antenna.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .works__item:nth-child(2)::before {
-    background-image: url(../css/svg/works/clock.png);
+    background-image: url(../images/works/clock.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .works__item:nth-child(3)::before {
-    background-image: url(../css/svg/works/diagram.png);
+    background-image: url(../images/works/diagram.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .works__item:nth-child(4)::before {
-    background-image: url(../css/svg/works/astronaut.png);
+    background-image: url(../images/works/astronaut.png);
     background-repeat: no-repeat;
     background-position: center;
 }
