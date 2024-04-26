@@ -24,7 +24,8 @@
             <a class="header__logo" href="index.html">Web<span class="header__logo--colored">Studio</span></a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Студія</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link current__studio"
+                            href="./index.html">Студія</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="./portfoli.html">Портфоліо</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="#">Контакти</a></li>
                 </ul>
@@ -38,7 +39,7 @@
                     </a>
 
                 </li>
-                <li class="header__contact-item"><a class="header__contact-link" href="tel:+380961111111">
+                <li class="header__contact-item"><a class="header__contact-link" id="number" href="tel:+380961111111">
                         <svg class="header__contact-icons" width="10px" height="16px">
                             <use href='./images/icons/symbol-defs.svg#icon-smartphone'></use>
                         </svg>+38 096 111 11
@@ -379,28 +380,34 @@
                 <label class="label__modal" for="user__name">
                     Ім'я
                     <div class="label__thumb">
-                        <input class="form__input" type="text" name="text" id="user__name" />
-                        <svg class="label__svg">
-                            <use href="./images/icons/symbol-defs.svg#icon-vector"></use>
-                        </svg>
+                        <div class="color__change">
+                            <input class="form__input" type="text" name="text" id="user__name" />
+                            <svg id="icon__vector" class="label__svg">
+                                <use href="./images/icons/symbol-defs.svg#icon-vector"></use>
+                            </svg>
+                        </div>
                     </div>
                 </label>
                 <label class="label__modal" for="user__phone">
                     Телефон
                     <div class="label__thumb">
-                        <input class="form__input" type="password" name="password" id="user__phone" />
-                        <svg class="label__svg">
-                            <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
-                        </svg>
+                        <div class="color__change">
+                            <input class="form__input" type="password" name="password" id="user__phone" />
+                            <svg id="icon__phone" class="label__svg">
+                                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
                     </div>
                 </label>
                 <label class="label__modal" for="user__email">
                     Пошта
                     <div class="label__thumb">
-                        <input class="form__input" type="email" name="email" id="user__email" />
-                        <svg class="label__svg">
-                            <use href="./images/icons/symbol-defs.svg#icon-email"></use>
-                        </svg>
+                        <div class="color__change">
+                            <input class="form__input" type="email" name="email" id="user__email" />
+                            <svg id="icon__email" class="label__svg">
+                                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </div>
                     </div>
                 </label>
                 <label class="label__four" for="coment">
