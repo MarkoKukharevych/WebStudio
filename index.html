@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -372,42 +372,36 @@
         <div class="modal">
             <button class="button__modal" data-modal-close>
                 <svg class="button__svg">
-                    <use class="button__use" href="./images/icons/symbol-defs.svg#icon-close"></use>
+                    <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
             <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="modal__form">
-                <label class="label__modal" for="user__name">
+                <label class="form__label" for="user__name">
                     Ім'я
                     <div class="label__thumb">
-                        <div class="color__change">
-                            <input class="form__input" type="text" name="text" id="user__name" />
-                            <svg id="icon__vector" class="label__svg">
-                                <use href="./images/icons/symbol-defs.svg#icon-vector"></use>
-                            </svg>
-                        </div>
+                        <input class="form__input" type="text" name="text" id="user__name" />
+                        <svg id="icon__vector" class="label__svg">
+                            <use href="./images/icons/symbol-defs.svg#icon-vector"></use>
+                        </svg>
                     </div>
                 </label>
-                <label class="label__modal" for="user__phone">
+                <label class="form__label" for="user__phone">
                     Телефон
                     <div class="label__thumb">
-                        <div class="color__change">
-                            <input class="form__input" type="password" name="password" id="user__phone" />
-                            <svg id="icon__phone" class="label__svg">
-                                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
-                            </svg>
-                        </div>
+                        <input class="form__input" type="text" name="tel" pattern="^[ 0-9]+$" id="user__phone" />
+                        <svg id="icon__phone" class="label__svg">
+                            <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
                     </div>
                 </label>
-                <label class="label__modal" for="user__email">
+                <label class="form__label" for="user__email">
                     Пошта
                     <div class="label__thumb">
-                        <div class="color__change">
-                            <input class="form__input" type="email" name="email" id="user__email" />
-                            <svg id="icon__email" class="label__svg">
-                                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
-                            </svg>
-                        </div>
+                        <input class="form__input" type="email" name="email" id="user__email" />
+                        <svg id="icon__email" class="label__svg">
+                            <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+                        </svg>
                     </div>
                 </label>
                 <label class="label__four" for="coment">
@@ -423,7 +417,7 @@
                             value="Погоджуюся з росилкою та приймаю Умови договору">
                     </div>
                 </label>
-                <button class="btn" data-close-modal>Відправити</button>
+                <button class="form__btn" data-close-modal>Відправити</button>
             </form>
         </div>
     </div>
