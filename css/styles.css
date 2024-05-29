@@ -21,9 +21,27 @@ body {
 
 /*header*/
 
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate__slideInDown {
+    animation: slideInDown 1s ease-out;
+}
+
 .header {
+    background-color: #FFF;
     padding: 25px 0;
     height: 80px;
+    width: 100%;
 }
 
 .header .container {
