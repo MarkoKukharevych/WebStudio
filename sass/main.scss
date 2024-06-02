@@ -1,0 +1,22 @@
+@import './utils/variables';
+
+// base
+
+@import './base/reset';
+@import './base/common';
+
+// components header
+
+@import './components/index/header';
+@import './components/index/hero';
+@import './components/index/works';
+@import './components/index/team';
+@import './components/index/photos';
+@import './components/index/client';
+@import './components/index/footer';
+@import './components/index/modal';
+
+// components portfolio
+
+@import './components/portfolio/project';
+@import './components/portfolio/nav'
