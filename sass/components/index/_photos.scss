@@ -32,7 +32,7 @@
     height: 70px;
 
 
-    color: #FFF;
+    color: map-get($map: $colors, $key: 'background');
     text-align: center;
     font-size: 14px;
     font-weight: 700;

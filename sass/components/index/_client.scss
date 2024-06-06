@@ -2,11 +2,11 @@
 
 .client {
     height: 298px;
-    background: #FFF;
+    background: map-get($map: $colors, $key: 'background' );
 }
 
 .client__title {
-    color: #212121;
+    color: map-get($map: $colors, $key: 'title');
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -30,8 +30,8 @@
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    border: 1px solid #AFB1B8;
-    fill: #AFB1B8;
+    border: 1px solid map-get($map: $colors, $key: 'border');
+    fill: map-get($map: $colors, $key: 'border');
     transition: border-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

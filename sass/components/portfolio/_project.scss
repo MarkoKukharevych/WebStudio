@@ -14,7 +14,7 @@
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 3 * 30px) / 3);
-    border: 1px solid #EEE;
+    border: 1px solid map-get($map: $colors, $key: 'background');
 }
 
 .project__item:hover {
@@ -63,7 +63,7 @@
 
 .overlay__text {
     width: 322px;
-    color: #FFF;
+    color: map-get($map: $colors, $key: 'background');
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;

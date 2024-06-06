@@ -15,7 +15,7 @@
 }
 
 .header {
-    background-color: #FFF;
+    background-color: map-get($map: $colors, $key: 'background');
     padding: 25px 0;
     height: 80px;
     width: 100%;

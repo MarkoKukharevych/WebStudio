@@ -25,7 +25,7 @@
 }
 
 .hero__btn {
-    color: #FFF;
+    color: map-get($map: $colors, $key: 'background');
     text-align: center;
     font-size: 16px;
     font-weight: 700;
