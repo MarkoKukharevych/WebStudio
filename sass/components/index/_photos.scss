@@ -16,7 +16,7 @@
 }
 
 .photos__title {
-    color: var(--title-color);
+    color: map-get($map: $colors, $key: 'title');
     text-align: center;
     font-size: 36px;
     font-weight: 700;
