@@ -4,47 +4,49 @@
     width: 1200px;
 }
 
-.photos__list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    gap: 30px;
-}
-
-.photos__item {
-    position: relative;
-}
-
-.photos__title {
-    color: map-get($map: $colors, $key: 'title');
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    margin-top: 94px;
-}
-
-.photos__subtitle {
-    position: absolute;
-    bottom: 94px;
-    background-color: rgba(47, 48, 58, 0.80);
-    width: 100%;
-    height: 70px;
-
-
-    color: map-get($map: $colors, $key: 'background');
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    padding: 27px 107px;
-}
-
-.photos__img {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    margin-bottom: 94px;
+.photos {
+    &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            gap: 30px;
+        }
+    
+        &__item {
+            position: relative;
+        }
+    
+        &__title {
+            color: map-get($map: $colors, $key: 'title');
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1.08px;
+            margin-top: 94px;
+        }
+    
+        &__subtitle {
+            position: absolute;
+            bottom: 94px;
+            background-color: rgba(47, 48, 58, 0.80);
+            width: 100%;
+            height: 70px;
+    
+    
+            color: map-get($map: $colors, $key: 'background');
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            padding: 27px 107px;
+        }
+    
+        &__img {
+            width: 370px;
+            height: 294px;
+            flex-shrink: 0;
+            margin-bottom: 94px;
+        }
 }

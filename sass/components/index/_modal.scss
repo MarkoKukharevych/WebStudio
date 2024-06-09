@@ -46,15 +46,14 @@
             border-radius: 50%;
             background-color: map-get($map: $colors, $key: 'background');
     
-        }
-    
-        .button__svg {
-            width: 18px;
-            height: 18px;
-        }
-    
-        &__button-close:hover .button__svg {
-            fill: map-get($map: $colors, $key: 'link');
+            &__svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            
+                &-close:hover .button__svg {
+                    fill: map-get($map: $colors, $key: 'link');
+                }
         }
     
         &__title {
@@ -66,7 +65,7 @@
             margin-bottom: 12px;
         }
     
-        .modal__form {
+        &__form {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -91,15 +90,15 @@
             padding-left: 42px;
             padding-top: 11px;
             padding-bottom: 11px;
-        }
-    
-        .form__input:focus {
-            border-color: map-get($map: $colors, $key: 'link');
-            outline: none;
-        }
-    
-        .form__input:focus+.label__svg {
-            fill: map-get($map: $colors, $key: 'link');
+
+            &:focus {
+                    border-color: map-get($map: $colors, $key: 'link');
+                    outline: none;
+                }
+            
+                &:focus+.label__svg {
+                    fill: map-get($map: $colors, $key: 'link');
+                }
         }
     
         .label__svg {
@@ -109,12 +108,11 @@
             left: 12px;
             top: 11px;
             /* transform: translateY(-50px); */
+
+            &:hover .label__svg:focus {
+                    fill: currentColor;
+                }
         }
-    
-        .label__svg:hover .label__svg:focus {
-            fill: currentColor;
-        }
-    
         .label__four {
             width: 448px;
             height: 120px;
