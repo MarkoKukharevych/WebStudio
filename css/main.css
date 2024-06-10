@@ -772,12 +772,15 @@ body {
 /*nav*/
 .nav {
   display: flex;
-  margin-left: 600px;
+  justify-content: center;
+  align-items: center;
   margin-top: 94px;
   margin-bottom: 20px;
+  outline: 1px solid red;
 }
 .nav__list {
   display: flex;
+  justify-content: center;
   gap: 8px;
 }
 .nav__button {
@@ -790,7 +793,7 @@ body {
   letter-spacing: 0.48px;
   border-radius: 4px;
   padding: 6px 22px;
-  background-color: #FFF;
+  background-color: #F5F4FA;
   transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__button:hover {
