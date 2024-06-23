@@ -6,12 +6,7 @@
     background-color: map-get($map: $colors, $key: 'background');
 
     &__title {
-            color: var(--title-color);
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            letter-spacing: 1.08px;
-            margin-top: 94px;
+            @extend %section-title;
         }
     
         &__list {
@@ -32,7 +27,7 @@
         }
     
         &__subtitle {
-            color: var(--title-color);
+            color: map-get($map: $colors, $key: 'title');
             text-align: center;
             font-size: 16px;
             font-weight: 500;
@@ -41,7 +36,7 @@
         }
     
         &__text {
-            color: var(--text-color);
+            color: map-get($map: $colors, $key: 'text');
             text-align: center;
             font-size: 16px;
             font-weight: 400;
@@ -54,16 +49,12 @@
         }
     
         &__icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include position;
             gap: 10px;
             margin-bottom: 42px;
 
             &-link {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include position;
                     width: 44px;
                     height: 44px;
                     border-radius: 50%;

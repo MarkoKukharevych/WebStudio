@@ -24,8 +24,7 @@
     
     
         &__subtitle {
-            color: var(--title-color);
-            font-size: 16px;
+            @extend %portfolio-subtitle;
             font-weight: 700;
             line-height: 36px;
             letter-spacing: 1.08px;
@@ -34,9 +33,7 @@
         }
     
         &__text {
-            color: map-get($map: $colors, $key: 'text');
-            font-size: 14px;
-            font-weight: 400;
+            @extend %text;
             line-height: 30px;
             letter-spacing: 0.48px;
             padding-left: 20px;

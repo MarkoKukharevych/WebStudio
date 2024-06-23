@@ -5,19 +5,12 @@
     background: map-get($map: $colors, $key: 'background');
 
        &__title {
-            color: map-get($map: $colors, $key: 'title');
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            letter-spacing: 1.08px;
-            margin-top: 94px;
+            @extend %section-title;
             margin-bottom: 50px;
         }
     
         &__list {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include position;
             gap: 30px;
             color: map-get($map: $colors, $key: 'link');
         }

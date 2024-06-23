@@ -48,7 +48,7 @@
 
             &-link {
                     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                    color: var(--title-color);
+                    color: map-get($map: $colors, $key: 'title');
                     font-size: 14px;
                     font-weight: 500;
                     letter-spacing: 0.28px;
@@ -100,7 +100,7 @@
                 align-items: center;
                 gap: 10px;
                 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                color: var(--text-color);
+                color: map-get($map: $colors, $key: 'title');
                 font-size: 14px;
                  font-weight: 500;
                 letter-spacing: 0.28px;

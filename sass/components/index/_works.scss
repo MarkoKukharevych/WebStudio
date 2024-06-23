@@ -42,7 +42,7 @@
         }
     
         &__subtitle {
-            color: var(--title-color);
+            color: map-get($map: $colors, $key: 'title');
             font-size: 14px;
             font-weight: 700;
             letter-spacing: 0.42px;
@@ -52,9 +52,7 @@
         }
     
         &__text {
-            color: map-get($map: $colors, $key: 'text');
-            font-size: 14px;
-            font-weight: 400;
+            @extend %text;
             line-height: 171.429%;
             letter-spacing: 0.42px;
         }

@@ -37,9 +37,7 @@
             position: absolute;
             right: 8px;
             top: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include position;
             width: 30px;
             height: 30px;
             border: 1px solid rgba(0, 0, 0, 0.10);
@@ -51,13 +49,13 @@
                     height: 18px;
                 }
             
-                &-close:hover .button__svg {
+                &:hover .button__svg {
                     fill: map-get($map: $colors, $key: 'link');
                 }
         }
     
         &__title {
-            color: map-get($map: $colors, $key: 'text');
+            color: map-get($map: $colors, $key: 'title');
             text-align: center;
             font-size: 20px;
             font-weight: 700;
