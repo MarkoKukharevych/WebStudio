@@ -1,7 +1,7 @@
 /*hero*/
 
 .hero {
-    @include position;
+    @extend %position;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero/img.jpg);
     height: 600px;

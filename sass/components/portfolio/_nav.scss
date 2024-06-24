@@ -1,6 +1,6 @@
 /*nav*/
 .nav {
-    @include position;
+@extend %position;
     margin-top: 94px;
     margin-bottom: 20px;
 

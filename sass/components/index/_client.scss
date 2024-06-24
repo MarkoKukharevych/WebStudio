@@ -10,7 +10,7 @@
         }
     
         &__list {
-            @include position;
+            @extend %position;
             gap: 30px;
             color: map-get($map: $colors, $key: 'link');
         }
