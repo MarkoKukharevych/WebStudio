@@ -24,6 +24,12 @@
   font-size: 16px;
 }
 
+.nav, .modal__button-close, .client__list, .team__icons-link, .team__icons, .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 *,
 *::after,
 *::before {
@@ -73,16 +79,29 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: 1px solid red; */
 }
 
 .section {
   margin-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 @keyframes slideInDown {
   from {
     transform: translateY(-100%);
@@ -191,9 +210,6 @@ body {
 
 /*hero*/
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img.jpg);
   height: 600px;
   background-repeat: no-repeat;
@@ -279,7 +295,7 @@ body {
 /*team*/
 .team {
   display: flex;
-  background-color: #FFF;
+  background-color: #F5F4FA;
 }
 .team__list {
   display: flex;
@@ -315,16 +331,10 @@ body {
   height: 260px;
 }
 .team__icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
   margin-bottom: 42px;
 }
 .team__icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -381,9 +391,6 @@ body {
   margin-bottom: 50px;
 }
 .client__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
   color: #2196F3;
 }
@@ -563,9 +570,6 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -760,9 +764,6 @@ body {
 
 /*nav*/
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 94px;
   margin-bottom: 20px;
 }

@@ -3,7 +3,7 @@
 
 .team {
     display: flex;
-    background-color: map-get($map: $colors, $key: 'background');
+    background-color: #F5F4FA;;
 
     &__title {
             @extend %section-title;
