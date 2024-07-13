@@ -1,141 +1,208 @@
 /*footer*/
 
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: #2F303A;
-    
-    &__logo-colored {
-            color: map-get($map: $colors, $key: 'background');
-        }
-    
-        &__div {
-            display: flex;
-        }
-    
-        &__list {
-            margin-top: 20px;
-        }
-    
-        &__item:not(:last-child) {
-            margin-bottom: 9px;
-        }
-    
-        &__adress {
-            color: map-get($map: $colors, $key: 'background');
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 171.429%;
-            letter-spacing: 0.42px;
-        }
-    
-        &__link {
-            color: map-get($map: $colors, $key: 'border');
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 171.429%;
-            letter-spacing: 0.42px;
-        }
-    
-        &__div-link {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            margin-top: 15px;
-            margin-left: 70px;
-    
-        }
-    
-        &__icons .team__icons-link {
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            background-color: rgba(255, 255, 255, 0.10);
-        }
-    
-        &__icons .team__icons-link:hover {
-            background-color: map-get($map: $colors, $key: 'link');
-        }
-    
-        &__icons {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-    
-        &__link-subtitle {
-            @extend %white-text;
-            letter-spacing: 0.42px;
-            text-transform: uppercase;
-        }
-    
-        // .footer__icons-link {}
-    
-        .social {
-            &__icons {
-                    width: 20px;
-                    height: 20px;
-                    fill: map-get($map: $colors, $key: 'background');
-                }
-        } 
-    
-        &__link {
-            display: flex;
-        }
-    
-        &__modal {
-            margin-left: 93px;
-            margin-top: 15px;
-        }
-    
-        &__label-title {
-            color: map-get($map: $colors, $key: 'background');
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.42px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-    
-        &__form {
-            position: relative;
-        }
-    
-        &__label {
-            width: 358px;
-            height: 50px;
-        }
-    
-        &__input {
-            width: 358px;
-            height: 50px;
-            border-radius: 4px;
-            border: 1px solid map-get($map: $colors, $key: 'border');
-            background-color: transparent;
-            padding-left: 16px;
-        }
-    
-        &__form-button {
-            width: 200px;
-            height: 50px;
-            flex-shrink: 0;
-            border-radius: 4px;
-            background: map-get($map: $colors, $key: 'link');
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-            color: map-get($map: $colors, $key: 'background');
-            text-align: center;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 30px;
-            letter-spacing: 0.96px;
-            padding-right: 35px;
-            margin-left: 12px;
-        }
-    
-        &__form-svg {
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            right: 30px;
-            top: 13px;
-        }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+
+  &__logo-colored {
+    color: map-get($map: $colors, $key: "background");
+  }
+
+  &__div {
+    display: flex;
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__adress {
+    color: map-get($map: $colors, $key: "background");
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+  }
+
+  &__link {
+    color: map-get($map: $colors, $key: "border");
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+  }
+
+  &__div-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 70px;
+  }
+
+  &__icons .team__icons-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__icons .team__icons-link:hover {
+    background-color: map-get($map: $colors, $key: "link");
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__link-subtitle {
+    @extend %white-text;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  // .footer__icons-link {}
+
+  .social {
+    &__icons {
+      width: 20px;
+      height: 20px;
+      fill: map-get($map: $colors, $key: "background");
+    }
+  }
+
+  &__link {
+    display: flex;
+  }
+
+  &__modal {
+    margin-left: 93px;
+    margin-top: 15px;
+  }
+
+  &__label-title {
+    color: map-get($map: $colors, $key: "background");
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__label {
+    width: 358px;
+    height: 50px;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid map-get($map: $colors, $key: "border");
+    background-color: transparent;
+    padding-left: 16px;
+  }
+
+  &__form-button {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: map-get($map: $colors, $key: "link");
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: map-get($map: $colors, $key: "background");
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    padding-right: 35px;
+    margin-left: 12px;
+  }
+
+  &__form-svg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 30px;
+    top: 13px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    background: #2f303a;
+
+    &__div {
+      flex-direction: column;
+    }
+
+    &__div-logo {
+      text-align: center;
+    }
+
+    &__logo {
+      margin: 0 auto;
+    }
+
+    &__list {
+      margin-left: 160px;
+    }
+
+    &__adress {
+      margin-left: -160px;
+    }
+
+    &__div-link {
+      margin-top: 60px;
+    }
+
+    &__link-subtitle {
+      margin-left: 100px;
+    }
+
+    &__icons {
+      margin-left: 60px;
+    }
+
+    &__form {
+      position: relative;
+    }
+
+    &__label-title {
+      margin-bottom: 20px;
+      margin-left: 37px;
+      margin-top: 60px;
+    }
+
+    &__input {
+      width: 450px;
+      height: 50px;
+      border-radius: 4px;
+      border: 1px solid map-get($map: $colors, $key: "border");
+      background-color: transparent;
+      padding-left: 16px;
+      margin-left: -90px;
+    }
+
+    &__form-button {
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+
+    &__form-svg {
+      right: 145px;
+      top: 82px;
+    }
+  }
 }
