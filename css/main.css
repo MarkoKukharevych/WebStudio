@@ -122,6 +122,7 @@ body {
 }
 
 .header {
+  align-items: center;
   background-color: #FFF;
   padding: 25px 0;
   height: 80px;
@@ -137,77 +138,22 @@ body {
 .header__logo--colored {
   color: #212121;
 }
-.header__nav {
-  margin-left: 93px;
-}
-.header__nav-list {
-  display: flex;
-  gap: 50px;
-  margin-top: 8px;
-}
-.header__nav-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-  margin-top: px;
-}
-.header__nav-link:hover {
-  color: #2196F3;
-}
-.header .current__portfolio::after {
-  content: "";
-  display: block;
-  width: 76px;
-  height: 4px;
-  border-radius: 2px;
-  background: #2196F3;
-  margin-top: 25px;
-}
-.header .current__studio::after {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 4px;
-  flex-shrink: 0;
-  border-radius: 2px;
-  background: #2196F3;
-  margin-top: 25px;
-}
-.header__contact-list {
-  margin-left: 318px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.header__contact-item {
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap-reverse;
-}
-.header__contact-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-  padding-bottom: 18px;
-}
-.header__contact-link:hover, .header__contact-link:focus {
-  color: #2196F3;
-}
-.header__contact-icons {
-  fill: currentColor;
-}
-.header #number {
-  width: 150px;
-  height: 16px;
-}
 
+@media screen and (min-width: 480px) {
+  .header {
+    position: relative;
+    padding: 16px 0;
+    width: 480px;
+  }
+  .header__logo {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    margin: 0 15px;
+    margin-right: 276px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
 /*hero*/
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img.jpg);
@@ -245,6 +191,23 @@ body {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 400px;
+  }
+  .hero__title {
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    width: 360px;
+  }
+  .hero__btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
 /*works*/
 .works__list {
   display: flex;
@@ -254,7 +217,7 @@ body {
   content: "";
   display: block;
   border-radius: 4px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   width: 270px;
   height: 120px;
 }
@@ -292,10 +255,46 @@ body {
   letter-spacing: 0.42px;
 }
 
+@media screen and (min-width: 480px) {
+  .works {
+    margin-top: -34px;
+  }
+  .works__list {
+    flex-direction: column;
+  }
+  .works__item::before {
+    content: "";
+    width: 450px;
+    height: 120px;
+  }
+  .works__item:nth-child(1)::before {
+    background-image: url(../images/works/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__item:nth-child(2)::before {
+    background-image: url(../images/works/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__item:nth-child(3)::before {
+    background-image: url(../images/works/diagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__item:nth-child(4)::before {
+    background-image: url(../images/works/astronaut.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__subtitle {
+    text-align: center;
+  }
+}
 /*team*/
 .team {
   display: flex;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 .team__list {
   display: flex;
@@ -350,6 +349,63 @@ body {
   height: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .team {
+    height: 2761px;
+    flex-direction: column;
+  }
+  .team__title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .team__list {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .team__item {
+    width: 450px;
+    height: 622px;
+    padding-bottom: 60px;
+    margin: 0;
+  }
+  .team__subtitle {
+    margin-bottom: 10px;
+    margin-top: -5px;
+  }
+  .team__text {
+    color: #757575;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+  }
+  .team__img {
+    width: 450px;
+    height: 460px;
+  }
+  .team__icons {
+    gap: 10px;
+    margin-bottom: 42px;
+    margin-top: -15px;
+  }
+  .team__icons-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team__icons-link:hover, .team__icons-link:focus {
+    background-color: #2196F3;
+    fill: #FFF;
+  }
+  .team .sociale__icons {
+    width: 20px;
+    height: 20px;
+  }
+}
 /*photos*/
 .photos .container {
   width: 1200px;
@@ -382,6 +438,11 @@ body {
   margin-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .photos {
+    display: none;
+  }
+}
 /* client */
 .client {
   height: 298px;
@@ -418,6 +479,56 @@ body {
   margin: 16px 32px;
 }
 
+@media screen and (min-width: 480px) {
+  .client {
+    height: 550px;
+  }
+  .client__title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.84px;
+    margin-bottom: 50px;
+  }
+  .client__list {
+    flex-direction: column;
+    color: #2196F3;
+  }
+  .client__item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    transition: border-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client__item:hover {
+    border-color: #2196F3;
+    fill: currentColor;
+  }
+  .client__icons {
+    width: 106px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 16px 32px;
+  }
+  .client .first__div {
+    display: flex;
+    gap: 30px;
+  }
+  .client .second__div {
+    display: flex;
+    gap: 30px;
+  }
+  .client .third__div {
+    display: flex;
+    gap: 30px;
+  }
+}
 /*footer*/
 .footer {
   padding-top: 60px;

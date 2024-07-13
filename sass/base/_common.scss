@@ -1,37 +1,30 @@
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
-    margin-bottom: 94px;
+  margin-bottom: 94px;
 }
-
-// mobile 480+
 
 @media screen and (min-width: 480px) {
-    .container {
-            width: 480px;
-        }
+  .container {
+    width: 480px;
+  }
 }
-
-
-// tablet 768+ 
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
+  .container {
+    width: 768px;
+  }
 }
 
-// desktop 1200+ 
-
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
+  .container {
+    width: 1200px;
+  }
 }
