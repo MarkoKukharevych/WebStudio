@@ -25,12 +25,13 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a class="header__nav-link current__studio"
-                            href="./index.html">Студія</a></li>
+                            href="./index.html">Студія</a>
+                    </li>
                     <li class="header__nav-item"><a class="header__nav-link" href="./portfoli.html">Портфоліо</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <!-- <ul class="header__contact-list">
+            <ul class="header__contact-list">
                 <li class="header__contact-item">
                     <a class="header__contact-link" href="mailto:info@devstudio.com">
                         <svg class="header__contact-icons" width="16px" height="12px">
@@ -46,7 +47,7 @@
                         11
                     </a>
                 </li>
-            </ul> -->
+            </ul>
             <!-- <button class="header__menu-button" type="button">
                 <svg class="header__menu-button__icon">
                     <use href='./images/icons/symbol-defs.svg#icon-burger-menu'></use>
@@ -423,12 +424,12 @@
                     <textarea class="text__label" name="text" id="coment" cols="30" rows="10"
                         placeholder="Введіть текст"></textarea>
                 </label>
-                <label>
-                    <div class="label__input">
-                        <h3 class="label__title">Погоджуюся з розсилкою та приймаю <a class="label__link" href="#">Умови
+                <label class="checkbox__label">
+                    <div class="checkbox__thumb">
+                        <input class="checkbox__input" type="checkbox" name="security">
+                        <h3 class="checkbox__title">Погоджуюся з розсилкою та приймаю <a class="checkbox__link"
+                                href="#">Умови
                                 договору</a></h3>
-                        <input class="input__div" type="checkbox" name="security"
-                            value="Погоджуюся з росилкою та приймаю Умови договору">
                     </div>
                 </label>
                 <button class="form__btn" data-close-modal>Відправити</button>

@@ -64,3 +64,22 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+
+    &__title {
+      font-size: 26px;
+      line-height: 42px;
+      letter-spacing: 1.56px;
+      width: 360px;
+    }
+
+    &__btn {
+      display: block;
+      width: 200px;
+      margin-top: 30px;
+    }
+  }
+}

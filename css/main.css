@@ -800,7 +800,6 @@ body {
 }
 .modal .label__input {
   display: flex;
-  flex-direction: row-reverse;
   gap: 5px;
 }
 .modal .label__title {
@@ -1019,7 +1018,12 @@ body {
 
 @media screen and (min-width: 480px) {
   .nav {
-    height: 91px;
     margin-top: 60px;
+  }
+  .nav__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 91px;
   }
 }/*# sourceMappingURL=main.css.map */
