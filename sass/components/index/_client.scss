@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 480px) {
   .client {
-    height: 480px;
+    height: 500px;
 
     &__title {
       font-size: 28px;
@@ -57,25 +57,29 @@
     }
 
     &__list {
-      flex-direction: column;
-      @extend %position;
-      color: map-get($map: $colors, $key: "link");
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     // .client__icons:hover {}
+  }
+}
 
-    .first__div {
-      display: flex;
-      gap: 30px;
+@media screen and (min-width: 768px) {
+  .client {
+    height: 350px;
+
+    &__title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.84px;
+      margin-bottom: 30px;
+      margin-top: 60px;
     }
 
-    .second__div {
-      display: flex;
-      gap: 30px;
-    }
-    .third__div {
-      display: flex;
-      gap: 30px;
+    &__list {
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 }

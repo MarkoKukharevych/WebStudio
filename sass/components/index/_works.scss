@@ -103,3 +103,55 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .works {
+    height: 500px;
+    margin-top: -34px;
+
+    &__list {
+      flex-wrap: wrap;
+      width: 740px;
+      height: 500px;
+    }
+
+    &__item {
+      &::before {
+        content: "";
+        width: 354px;
+      }
+
+      &:nth-child(1)::before {
+        background-image: url(../images/works/antenna.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(2)::before {
+        background-image: url(../images/works/clock.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(3)::before {
+        background-image: url(../images/works/diagram.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(4)::before {
+        background-image: url(../images/works/astronaut.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &__subtitle {
+      text-align: start;
+    }
+
+    &__text {
+      width: 354px;
+    }
+  }
+}
