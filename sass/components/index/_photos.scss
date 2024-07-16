@@ -46,3 +46,16 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .photos {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photos {
+    display: flex;
+    margin-top: -70px;
+  }
+}

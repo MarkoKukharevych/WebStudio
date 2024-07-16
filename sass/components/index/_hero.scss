@@ -83,3 +83,23 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+
+    &__title {
+      font-size: 44px;
+      line-height: 60px;
+      letter-spacing: 2.46px;
+      width: 696px;
+    }
+
+    &__btn {
+      display: block;
+      width: 216px;
+      height: 50px;
+      color: #fff;
+    }
+  }
+}

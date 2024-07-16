@@ -106,19 +106,20 @@
 
 @media screen and (min-width: 768px) {
   .works {
-    height: 500px;
+    height: 700px;
+    width: 752px;
     margin-top: -34px;
 
     &__list {
       flex-wrap: wrap;
-      width: 740px;
-      height: 500px;
+      width: 750px;
     }
 
     &__item {
       &::before {
         content: "";
         width: 354px;
+        height: 120px;
       }
 
       &:nth-child(1)::before {

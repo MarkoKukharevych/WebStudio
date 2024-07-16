@@ -254,6 +254,42 @@ body {
     letter-spacing: 0.24px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header {
+    justify-content: center;
+  }
+  .header__nav {
+    display: flex;
+    margin-left: -150px;
+  }
+  .header__nav-list {
+    display: flex;
+    margin-top: 17px;
+    margin-right: 230px;
+  }
+  .header__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__contact-list {
+    width: 300px;
+    height: 16px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 69px;
+    gap: 30px;
+  }
+  .header__contact-link {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+  }
+  .header #number {
+    margin-top: 27px;
+  }
+}
 /*hero*/
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img.jpg);
@@ -322,6 +358,23 @@ body {
     display: block;
     width: 200px;
     margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 2.46px;
+    width: 696px;
+  }
+  .hero__btn {
+    display: block;
+    width: 216px;
+    height: 50px;
+    color: #fff;
   }
 }
 /*works*/
@@ -409,17 +462,18 @@ body {
 }
 @media screen and (min-width: 768px) {
   .works {
-    height: 500px;
+    height: 700px;
+    width: 752px;
     margin-top: -34px;
   }
   .works__list {
     flex-wrap: wrap;
-    width: 740px;
-    height: 500px;
+    width: 750px;
   }
   .works__item::before {
     content: "";
     width: 354px;
+    height: 120px;
   }
   .works__item:nth-child(1)::before {
     background-image: url(../images/works/antenna.png);
@@ -613,6 +667,98 @@ body {
     height: 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .team {
+    height: 1300px;
+  }
+  .team__title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .team__list {
+    flex-wrap: wrap;
+    width: 740px;
+    height: 1102px;
+  }
+  .team__item {
+    width: 354px;
+    height: 536px;
+    padding-bottom: 60px;
+    margin: 0;
+  }
+  .team__subtitle {
+    margin-bottom: 10px;
+    margin-top: -5px;
+  }
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+  .team__icons {
+    gap: 10px;
+    margin-bottom: 42px;
+    margin-top: -15px;
+  }
+  .team__icons-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team__icons-link:hover, .team__icons-link:focus {
+    background-color: #2196F3;
+    fill: #FFF;
+  }
+  .team .sociale__icons {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works {
+    width: 1170px;
+    height: 248px;
+    margin-top: -34px;
+  }
+  .works__list {
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 248px;
+  }
+  .works__item::before {
+    content: "";
+    width: 270px;
+  }
+  .works__item:nth-child(1)::before {
+    background-image: url(../images/works/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__item:nth-child(2)::before {
+    background-image: url(../images/works/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__item:nth-child(3)::before {
+    background-image: url(../images/works/diagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__item:nth-child(4)::before {
+    background-image: url(../images/works/astronaut.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .works__subtitle {
+    text-align: start;
+  }
+  .works__text {
+    width: 270px;
+  }
+}
 /*photos*/
 .photos .container {
   width: 1200px;
@@ -648,6 +794,17 @@ body {
 @media screen and (min-width: 480px) {
   .photos {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photos {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photos {
+    display: flex;
+    margin-top: -70px;
   }
 }
 /* client */
@@ -1075,11 +1232,14 @@ body {
   margin-top: 4px;
   resize: none;
 }
-.modal .label__input {
+.modal .checkbox__input {
   display: flex;
-  gap: 5px;
+  flex-direction: row-reverse;
+  width: 16px;
+  height: 15px;
+  margin-top: -7px;
 }
-.modal .label__title {
+.modal .checkbox__title {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
@@ -1088,10 +1248,10 @@ body {
   letter-spacing: 0.42px;
   margin-left: 2px;
   margin-right: 30px;
-  /* margin-top: 20px; */
+  margin-top: -10px;
   margin-bottom: 30px;
 }
-.modal .label__link {
+.modal .checkbox__link {
   flex-direction: row;
   color: #2196F3;
   font-size: 14px;
@@ -1100,11 +1260,13 @@ body {
   letter-spacing: 0.42px;
   text-decoration-line: underline;
 }
-.modal .input__div {
-  width: 16px;
-  height: 15px;
+.modal .checkbox__thumb {
+  display: flex;
+  height: 14px;
+  width: 390px;
   fill: #212121;
   margin-top: 3px;
+  gap: 8px;
 }
 .modal .form__btn {
   display: block;
@@ -1132,19 +1294,18 @@ body {
     width: 370px;
     height: 120px;
   }
-  .modal .label__title {
+  .modal .checkbox__title {
+    width: 346px;
     height: 14px;
     font-size: 12px;
     letter-spacing: 0.36px;
   }
-  .modal .label__link {
+  .modal .checkbox__link {
     flex-direction: none;
     font-size: 12px;
     letter-spacing: 0.36px;
   }
-  .modal .input__div {
-    width: 16px;
-    height: 15px;
+  .modal .checkbox__thumb {
     fill: #212121;
     margin-top: 3px;
   }
