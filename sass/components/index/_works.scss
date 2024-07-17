@@ -106,12 +106,13 @@
 
 @media screen and (min-width: 768px) {
   .works {
-    height: 700px;
+    height: 490px;
     width: 752px;
     margin-top: -34px;
 
     &__list {
       flex-wrap: wrap;
+      height: 478px;
       width: 750px;
     }
 
@@ -153,6 +154,60 @@
 
     &__text {
       width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    height: 250px;
+    width: 752px;
+    margin-top: -34px;
+
+    &__list {
+      height: 250px;
+      flex-wrap: wrap;
+      width: 750px;
+    }
+
+    &__item {
+      &::before {
+        content: "";
+        width: 270px;
+        height: 120px;
+      }
+
+      &:nth-child(1)::before {
+        background-image: url(../images/works/antenna.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(2)::before {
+        background-image: url(../images/works/clock.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(3)::before {
+        background-image: url(../images/works/diagram.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(4)::before {
+        background-image: url(../images/works/astronaut.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &__subtitle {
+      text-align: start;
+    }
+
+    &__text {
+      width: 270px;
     }
   }
 }
