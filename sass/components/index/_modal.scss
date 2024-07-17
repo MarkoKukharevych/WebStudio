@@ -232,3 +232,41 @@
 
 @media screen and (min-width: 768px) {
 }
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+
+    .label__four {
+      width: 448px;
+    }
+
+    .checkbox__thumb {
+      margin-left: 40px;
+    }
+
+    .checkbox__title {
+      width: 346px;
+      height: 14px;
+      font-size: 12px;
+      letter-spacing: 0.36px;
+    }
+
+    .checkbox__link {
+      flex-direction: none;
+      font-size: 12px;
+      letter-spacing: 0.36px;
+    }
+
+    .checkbox__thumb {
+      fill: map-get($map: $colors, $key: "title");
+      margin-top: 3px;
+    }
+
+    .form__btn {
+      margin-top: 31px;
+      margin-bottom: 40px;
+    }
+  }
+}
