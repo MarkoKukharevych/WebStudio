@@ -1457,18 +1457,19 @@ body {
     width: 448px;
   }
   .modal .checkbox__thumb {
+    display: flex;
     margin-left: 40px;
   }
   .modal .checkbox__title {
-    width: 346px;
-    height: 14px;
-    font-size: 12px;
+    height: 24px;
+    font-size: 14px;
     letter-spacing: 0.36px;
   }
   .modal .checkbox__link {
+    height: 24px;
     flex-direction: none;
-    font-size: 12px;
-    letter-spacing: 0.36px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
   }
   .modal .checkbox__thumb {
     fill: #212121;
