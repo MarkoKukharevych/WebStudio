@@ -156,11 +156,10 @@
     }
 
     &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       margin-left: 160px;
-    }
-
-    &__adress {
-      margin-left: -160px;
     }
 
     &__div-link {
