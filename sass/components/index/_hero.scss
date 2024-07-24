@@ -37,7 +37,7 @@
     /* shadow-middle */
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-    width: 216px;
+    width: 200px;
     height: 50px;
     display: block;
     margin: 0 auto;
@@ -46,23 +46,23 @@
 }
 
 @media screen and (min-width: 480px) {
-  .hero {
-    height: 400px;
+  // .hero {
+  //   height: 400px;
 
-    &__title {
-      font-size: 26px;
-      line-height: 42px;
-      letter-spacing: 1.56px;
-      width: 360px;
-    }
+  //   &__title {
+  //     font-size: 26px;
+  //     line-height: 42px;
+  //     letter-spacing: 1.56px;
+  //     width: 360px;
+  //   }
 
-    &__btn {
-      display: block;
-      width: 200px;
-      margin: 0 auto;
-      margin-top: 30px;
-    }
-  }
+  //   &__btn {
+  //     display: block;
+  //     width: 200px;
+  //     margin: 0 auto;
+  //     margin-top: 30px;
+  //   }
+  // }
 }
 
 @media screen and (min-width: 768px) {
