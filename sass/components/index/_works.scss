@@ -2,8 +2,7 @@
 
 .works {
   &__list {
-    display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -12,8 +11,9 @@
       display: block;
       border-radius: 4px;
       background-color: #f5f4fa;
-      width: 270px;
+      width: 450px;
       height: 120px;
+      margin-top: 30px;
     }
 
     &:nth-child(1)::before {
@@ -43,6 +43,7 @@
 
   &__subtitle {
     color: map-get($map: $colors, $key: "title");
+    text-align: center;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -53,55 +54,55 @@
 
   &__text {
     @extend %text;
-    line-height: 171.429%;
+    line-height: 24px;
     letter-spacing: 0.42px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .works {
-    margin-top: auto;
+  // .works {
+  //   margin-top: auto;
 
-    &__list {
-      flex-direction: column;
-    }
+  //   &__list {
+  //     flex-direction: column;
+  //   }
 
-    &__item {
-      &::before {
-        content: "";
-        width: 450px;
-        height: 120px;
-      }
+  //   &__item {
+  //     &::before {
+  //       content: "";
+  //       width: 450px;
+  //       height: 120px;
+  //     }
 
-      &:nth-child(1)::before {
-        background-image: url(../images/works/antenna.png);
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+  //     &:nth-child(1)::before {
+  //       background-image: url(../images/works/antenna.png);
+  //       background-repeat: no-repeat;
+  //       background-position: center;
+  //     }
 
-      &:nth-child(2)::before {
-        background-image: url(../images/works/clock.png);
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+  //     &:nth-child(2)::before {
+  //       background-image: url(../images/works/clock.png);
+  //       background-repeat: no-repeat;
+  //       background-position: center;
+  //     }
 
-      &:nth-child(3)::before {
-        background-image: url(../images/works/diagram.png);
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+  //     &:nth-child(3)::before {
+  //       background-image: url(../images/works/diagram.png);
+  //       background-repeat: no-repeat;
+  //       background-position: center;
+  //     }
 
-      &:nth-child(4)::before {
-        background-image: url(../images/works/astronaut.png);
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
+  //     &:nth-child(4)::before {
+  //       background-image: url(../images/works/astronaut.png);
+  //       background-repeat: no-repeat;
+  //       background-position: center;
+  //     }
+  //   }
 
-    &__subtitle {
-      text-align: center;
-    }
-  }
+  //   &__subtitle {
+  //     text-align: center;
+  //   }
+  // }
 }
 
 @media screen and (min-width: 768px) {
