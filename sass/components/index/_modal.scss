@@ -79,20 +79,23 @@
     font-weight: 400;
     letter-spacing: 0.12px;
     margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-right: 340px;
   }
 
   .label__thumb {
     display: flex;
-    justify-content: center;
-    position: relative;
-    padding-top: 4px;
   }
 
   .form__input {
-    width: 370px;
+    width: 450px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 40px;
+    padding-right: 190px;
+    margin-top: 4px;
 
     &:focus {
       border-color: map-get($map: $colors, $key: "link");
@@ -109,7 +112,7 @@
     width: 18px;
     height: 18px;
     left: 12px;
-    top: 11px;
+    top: 28px;
     /* transform: translateY(-50px); */
 
     &:hover .label__svg:focus {
@@ -126,6 +129,7 @@
     font-weight: 400;
     letter-spacing: 0.12px;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .text__label {
@@ -135,14 +139,15 @@
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.12px;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-left: 16px;
     margin-top: 4px;
     resize: none;
   }
 
-  .checkbox__thumb {
-    margin: 0;
+  .checkbox__label {
+    margin-left: 0;
+    margin-right: 320px;
   }
 
   .checkbox__input {
@@ -150,7 +155,7 @@
     flex-direction: row-reverse;
     width: 16px;
     height: 15px;
-    margin-top: -7px;
+    margin-top: -2px;
   }
 
   .checkbox__title {
@@ -172,11 +177,12 @@
 
   .checkbox__thumb {
     display: flex;
-    height: 14px;
-    width: 390px;
+    height: 30px;
+    width: 360px;
     fill: map-get($map: $colors, $key: "title");
     margin-top: 3px;
     gap: 8px;
+    margin-bottom: 20px;
   }
 
   .form__btn {
