@@ -82,7 +82,6 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 
 .section {
@@ -134,13 +133,17 @@ body {
   .header {
     justify-content: center;
   }
-  .header__nav {
-    display: flex;
-    margin-left: -200px;
-  }
   .header__nav-list {
     display: flex;
-    margin-top: 17px;
+    gap: 51px;
+  }
+  .header__nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+  }
+  .header__nav-link:hover {
+    color: #2196F3;
   }
   .header__contact-list {
     display: flex;
@@ -152,6 +155,11 @@ body {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.24px;
+    color: #757575;
+  }
+  .header__contact-icons {
+    fill: #757575;
+    margin-right: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -310,14 +318,20 @@ body {
 
 @media screen and (min-width: 768px) {
   .works {
-    height: 490px;
-    width: 752px;
-    margin-top: -34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 768px;
   }
   .works__list {
+    display: flex;
     flex-wrap: wrap;
     height: 478px;
-    width: 750px;
+    width: 768px;
+    gap: 30px;
+    margin-top: 0;
+    margin-bottom: 60px;
   }
   .works__item::before {
     content: "";
@@ -478,13 +492,14 @@ body {
     margin-bottom: 30px;
   }
   .team__list {
+    display: flex;
     flex-wrap: wrap;
     width: 740px;
-    height: 1102px;
+    height: 1100px;
   }
   .team__item {
     width: 354px;
-    height: 536px;
+    height: 540px;
     padding-bottom: 60px;
     margin: 0;
   }
@@ -499,7 +514,6 @@ body {
   .team__icons {
     gap: 10px;
     margin-bottom: 42px;
-    margin-top: 16px;
   }
   .team__icons-link {
     width: 44px;
@@ -670,12 +684,17 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  line-height: 171.429%;
+  line-height: 24px;
   letter-spacing: 0.42px;
   margin-left: 150px;
 }
 .footer__link-adrees {
   color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
 }
 .footer__div-link {
   display: flex;
@@ -770,18 +789,16 @@ body {
     position: relative;
   }
   .footer__div-logo {
+    width: 322px;
     position: absolute;
+    right: 500px;
     text-align: center;
-    margin-left: -76px;
   }
   .footer__logo {
-    margin-left: 130px;
+    margin-left: 110px;
   }
-  .footer__list {
-    margin-left: 160px;
-  }
-  .footer__adress {
-    margin-left: -30px;
+  .footer__link-adrees {
+    margin-left: 110px;
   }
   .footer__div-link {
     position: absolute;
@@ -793,13 +810,15 @@ body {
     margin-left: 100px;
   }
   .footer__icons {
-    margin-left: 60px;
+    margin-left: 100px;
   }
   .footer__modal {
+    display: flex;
+    align-items: center;
     width: 450px;
     position: absolute;
     bottom: 60px;
-    margin-left: 240px;
+    left: 130px;
   }
   .footer__label-title {
     width: 207px;
@@ -817,17 +836,17 @@ body {
     width: 450px;
     height: 50px;
     border-radius: 4px;
-    padding-left: 16px;
-    margin-left: -90px;
+    border: 1px solid #AFB1B8;
+    background-color: transparent;
   }
   .footer__form-button {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-left: 40px;
   }
   .footer__form-svg {
     position: absolute;
-    right: 240px;
-    top: 82px;
+    right: 30px;
+    top: 74px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1075,6 +1094,12 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 input[type=checkbox],
 label {
   display: none;

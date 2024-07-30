@@ -60,61 +60,24 @@
 }
 
 @media screen and (min-width: 480px) {
-  // .works {
-  //   margin-top: auto;
-
-  //   &__list {
-  //     flex-direction: column;
-  //   }
-
-  //   &__item {
-  //     &::before {
-  //       content: "";
-  //       width: 450px;
-  //       height: 120px;
-  //     }
-
-  //     &:nth-child(1)::before {
-  //       background-image: url(../images/works/antenna.png);
-  //       background-repeat: no-repeat;
-  //       background-position: center;
-  //     }
-
-  //     &:nth-child(2)::before {
-  //       background-image: url(../images/works/clock.png);
-  //       background-repeat: no-repeat;
-  //       background-position: center;
-  //     }
-
-  //     &:nth-child(3)::before {
-  //       background-image: url(../images/works/diagram.png);
-  //       background-repeat: no-repeat;
-  //       background-position: center;
-  //     }
-
-  //     &:nth-child(4)::before {
-  //       background-image: url(../images/works/astronaut.png);
-  //       background-repeat: no-repeat;
-  //       background-position: center;
-  //     }
-  //   }
-
-  //   &__subtitle {
-  //     text-align: center;
-  //   }
-  // }
 }
 
 @media screen and (min-width: 768px) {
   .works {
-    height: 490px;
-    width: 752px;
-    margin-top: -34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 768px;
 
     &__list {
+      display: flex;
       flex-wrap: wrap;
       height: 478px;
-      width: 750px;
+      width: 768px;
+      gap: 30px;
+      margin-top: 0;
+      margin-bottom: 60px;
     }
 
     &__item {

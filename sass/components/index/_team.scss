@@ -105,14 +105,15 @@
     }
 
     &__list {
+      display: flex;
       flex-wrap: wrap;
       width: 740px;
-      height: 1102px;
+      height: 1100px;
     }
 
     &__item {
       width: 354px;
-      height: 536px;
+      height: 540px;
       padding-bottom: 60px;
       margin: 0;
     }
@@ -130,7 +131,6 @@
     &__icons {
       gap: 10px;
       margin-bottom: 42px;
-      margin-top: 16px;
 
       &-link {
         width: 44px;

@@ -51,31 +51,38 @@
   .header {
     justify-content: center;
 
-    &__nav {
+    &__nav-list {
       display: flex;
-      margin-left: -200px;
+      gap: 51px;
     }
 
-    &__nav {
-      &-list {
-        display: flex;
-        margin-top: 17px;
+    &__nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+
+      &:hover {
+        color: map-get($map: $colors, $key: "link");
       }
     }
 
-    &__contact {
-      &-list {
-        display: flex;
-        flex-direction: column;
-        margin-left: 69px;
-        gap: 10px;
-      }
+    &__contact-list {
+      display: flex;
+      flex-direction: column;
+      margin-left: 69px;
+      gap: 10px;
+    }
 
-      &-link {
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 0.24px;
-      }
+    &__contact-link {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.24px;
+      color: map-get($map: $colors, $key: "text");
+    }
+
+    &__contact-icons {
+      fill: map-get($map: $colors, $key: "text");
+      margin-right: 8px;
     }
   }
 }
