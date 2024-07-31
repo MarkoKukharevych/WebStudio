@@ -65,10 +65,9 @@
 @media screen and (min-width: 768px) {
   .works {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 420px;
+    height: 580px;
     width: 768px;
+    margin-bottom: auto;
 
     &__list {
       display: flex;
@@ -76,8 +75,7 @@
       height: 478px;
       width: 768px;
       gap: 30px;
-      margin-top: 0;
-      margin-bottom: 60px;
+      margin-top: -40px;
     }
 
     &__item {
@@ -124,14 +122,16 @@
 
 @media screen and (min-width: 1200px) {
   .works {
+    display: flex;
+    justify-content: flex-start;
     height: 250px;
-    width: 752px;
-    margin-top: -34px;
+    // margin-left: 570px;
 
     &__list {
+      display: flex;
+      justify-content: flex-start;
       height: 250px;
-      flex-wrap: wrap;
-      width: 750px;
+      width: 1200px;
     }
 
     &__item {

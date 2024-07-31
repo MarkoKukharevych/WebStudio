@@ -231,47 +231,30 @@
     height: 250px;
     position: relative;
 
-    &__div {
-      &-logo {
-        position: absolute;
-        text-align: center;
-        margin-left: -76px;
-      }
+    &__div-logo {
+      position: absolute;
+      text-align: center;
+      left: 0;
     }
 
-    &__logo {
-      margin-left: 130px;
-    }
-
-    &__list {
-      margin-left: 160px;
-    }
-
-    &__div {
-      &-link {
-        position: absolute;
-        left: 250px;
-        top: 15px;
-        margin-top: 60px;
-      }
-    }
-
-    &__link {
-      &-subtitle {
-        margin-left: 100px;
-      }
-    }
-
-    &__icons {
-      margin-left: 60px;
+    &__div-link {
+      position: absolute;
+      margin-top: 60px;
+      left: 0;
+      right: 250px;
     }
 
     &__modal {
+      position: absolute;
       width: 570px;
       height: 90px;
-      position: absolute;
-      top: 0;
-      right: -80px;
+      left: 780px;
+      margin-bottom: 55px;
+    }
+
+    &__label-title {
+      margin-bottom: -40px;
+      margin-right: 550px;
     }
 
     &__form {
@@ -279,35 +262,21 @@
       flex-wrap: wrap;
     }
 
-    &__label {
-      &-title {
-        margin-bottom: 3px;
-        margin-left: -90px;
-        margin-top: 60px;
-      }
-    }
-
     &__input {
       width: 350px;
       height: 50px;
       border-radius: 4px;
-      padding-left: 16px;
-      margin-left: -90px;
     }
 
-    &__form {
-      &-button {
-        width: 200px;
-        margin-top: 20px;
-        margin-left: 12px;
-      }
+    &__form-button {
+      width: 200px;
     }
 
     &__form {
       &-svg {
         position: absolute;
-        right: 125px;
-        top: 32px;
+        right: 30px;
+        top: 74px;
       }
     }
   }
