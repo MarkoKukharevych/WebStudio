@@ -130,6 +130,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
   .header {
     justify-content: center;
   }
@@ -888,10 +891,11 @@ body {
   .footer__modal {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 450px;
     position: absolute;
     bottom: 60px;
-    left: 130px;
+    left: 140px;
   }
   .footer__label-title {
     width: 207px;
@@ -911,15 +915,16 @@ body {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     background-color: transparent;
+    margin-left: 20px;
   }
   .footer__form-button {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-left: 40px;
   }
   .footer__form-svg {
     position: absolute;
-    right: 30px;
-    top: 74px;
+    right: 140px;
+    top: 84px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -931,40 +936,43 @@ body {
   .footer__div-logo {
     position: absolute;
     text-align: center;
-    left: 0;
+    left: -50px;
   }
   .footer__div-link {
     position: absolute;
     margin-top: 60px;
     left: 0;
-    right: 250px;
+    right: 350px;
   }
   .footer__modal {
     position: absolute;
     width: 570px;
     height: 90px;
-    left: 780px;
+    left: 790px;
     margin-bottom: 55px;
   }
   .footer__label-title {
-    margin-bottom: -40px;
-    margin-right: 550px;
+    margin-right: 700px;
+    padding-top: 60px;
   }
   .footer__form {
     position: relative;
-    flex-wrap: wrap;
+    width: 580px;
+    height: 50px;
+    margin-bottom: 65px;
   }
   .footer__input {
     width: 350px;
     height: 50px;
     border-radius: 4px;
+    margin-right: 150px;
   }
   .footer__form-button {
     width: 200px;
   }
   .footer__form-svg {
     position: absolute;
-    right: 30px;
+    right: 200px;
     top: 74px;
   }
 }
@@ -1041,20 +1049,16 @@ body {
   letter-spacing: 0.12px;
   margin-top: 10px;
   margin-left: 0px;
-  margin-bottom: 20px;
-  margin-right: 340px;
 }
 .modal .label__thumb {
   display: flex;
 }
 .modal .form__input {
-  width: 450px;
+  width: 370px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 40px;
-  padding-right: 190px;
-  margin-top: 4px;
 }
 .modal .form__input:focus {
   border-color: #2196F3;
@@ -1067,12 +1071,32 @@ body {
   position: absolute;
   width: 18px;
   height: 18px;
-  left: 12px;
-  top: 28px;
-  /* transform: translateY(-50px); */
+  left: 50px;
+  top: 200px;
 }
 .modal .label__svg:hover .label__svg:focus {
   fill: currentColor;
+}
+.modal #icon__vector {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 50px;
+  top: 120px;
+}
+.modal #icon__phone {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 50px;
+  top: 195px;
+}
+.modal #icon__email {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 50px;
+  top: 267px;
 }
 .modal .label__four {
   width: 370px;
@@ -1097,10 +1121,6 @@ body {
   padding-left: 16px;
   margin-top: 4px;
   resize: none;
-}
-.modal .checkbox__label {
-  margin-left: 0;
-  margin-right: 320px;
 }
 .modal .checkbox__input {
   display: flex;
@@ -1147,7 +1167,6 @@ body {
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1156,8 +1175,8 @@ body {
     height: 609px;
   }
 }
-input[type=checkbox],
-label {
+.burger__input[type=checkbox],
+.burger__label {
   display: none;
 }
 
@@ -1166,22 +1185,22 @@ label {
   nav {
     order: 1;
   }
-  label {
+  .burger__label {
     display: block;
     height: 30px;
     width: 30px;
     margin-left: auto;
     position: relative;
   }
-  label:hover {
+  .burger__label:hover {
     cursor: pointer;
   }
-  label span {
+  .burger__label span {
     top: 15px;
   }
-  label span,
-  label span::before,
-  label span::after {
+  .burger__label span,
+  .burger__label span::before,
+  .burger__label span::after {
     content: "";
     display: block;
     width: 25px;
@@ -1192,42 +1211,87 @@ label {
     right: 0;
     transition: 0.3s;
   }
-  label span::before {
+  .burger__label span::before {
     top: -8px;
   }
-  label span::after {
+  .burger__label span::after {
     top: 8px;
   }
-  .header__nav-list {
-    display: none;
-  }
-  input[type=checkbox]:checked ~ .header__nav-list {
+  .burger__input[type=checkbox]:checked ~ .mobile__menu {
     display: flex;
     flex-direction: column;
   }
-  input[type=checkbox]:checked ~ label span {
+  .burger__input[type=checkbox]:checked ~ .burger__label span {
     transform: rotate(-45deg);
   }
-  input[type=checkbox]:checked ~ label span::before {
+  .burger__input[type=checkbox]:checked ~ .burger__label span::before {
     top: 0;
     transform: rotate(0);
   }
-  input[type=checkbox]:checked ~ label span::after {
+  .burger__input[type=checkbox]:checked ~ .burger__label span::after {
     top: 0;
     transform: rotate(90deg);
   }
-  .header__nav-list {
+  .mobile__menu {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    z-index: 2;
+    width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    background: #fff;
-    box-shadow: 0 12px 8px #ececec;
+    background: #FFF;
+    transform: translateX(100%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
   }
-  .header__nav-list li {
-    margin: 15px 0;
+  .mobile__nav-item {
+    margin-bottom: 32px;
+  }
+  .mobile__nav-link {
+    color: #212121;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+  }
+  .mobile__menu-link:hover {
+    color: #2196f3;
+  }
+  .mobile__contact-list {
+    margin-bottom: 64px;
+  }
+  .mobile__contact-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile__contact_tell-link {
+    color: #2196F3;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+  }
+  .mobile__contact_email-link {
+    color: #757575;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+  }
+  .mobile__social-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .mobile__social-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  .mobile__social-link {
+    color: #2196f3;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
   }
 }
 /*portfolio*/
