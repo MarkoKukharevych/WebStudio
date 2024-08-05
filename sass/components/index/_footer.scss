@@ -11,6 +11,10 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
   }
 
@@ -20,17 +24,14 @@
 
   &__link {
     color: map-get($map: $colors, $key: "border");
-    text-align: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-    margin-left: 150px;
   }
 
   &__link-adrees {
     color: map-get($map: $colors, $key: "background");
-    text-align: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -38,10 +39,6 @@
   }
 
   &__div-link {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
     margin-top: 60px;
   }
 
@@ -57,14 +54,15 @@
   &__icons {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin-top: 20px;
   }
 
   &__link-subtitle {
     @extend %white-text;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 20px;
   }
 
   // .footer__icons-link {}
@@ -77,14 +75,7 @@
     }
   }
 
-  &__link {
-    display: flex;
-  }
-
   &__modal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 60px;
   }
 
@@ -97,191 +88,117 @@
     margin-bottom: 20px;
   }
 
-  &__form {
-    position: relative;
-  }
-
-  &__label {
-    width: 358px;
-    height: 50px;
-    margin: auto;
-  }
-
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border-radius: 4px;
     border: 1px solid map-get($map: $colors, $key: "border");
     background-color: transparent;
-    padding-left: 16px;
+    padding: 15px 16px;
   }
 
   &__form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     width: 200px;
     height: 50px;
-    flex-shrink: 0;
     border-radius: 4px;
     background: map-get($map: $colors, $key: "link");
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: map-get($map: $colors, $key: "background");
-    text-align: center;
+    // text-align: center;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    padding-right: 35px;
-    margin-left: 12px;
+    // padding: 35px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__form-svg {
-    position: absolute;
     width: 24px;
     height: 24px;
-    right: 150px;
-    top: 83px;
   }
-}
-
-@media screen and (min-width: 480px) {
 }
 
 @media screen and (min-width: 768px) {
   .footer {
-    height: 463px;
-    position: relative;
-
-    &__div-logo {
-      width: 322px;
-      position: absolute;
-      right: 500px;
-      text-align: center;
-    }
-
-    &__logo {
-      margin-left: 110px;
-    }
-
-    &__link-adrees {
-      margin-left: 110px;
-    }
-
-    &__div-link {
-      position: absolute;
-      right: 89px;
-      top: 15px;
-      margin-top: 60px;
-    }
-
-    &__link-subtitle {
-      margin-left: 100px;
-    }
-
-    &__icons {
-      margin-left: 100px;
-    }
-
-    &__modal {
+    &__div {
       display: flex;
-      align-items: center;
       justify-content: center;
-      width: 450px;
-      position: absolute;
-      bottom: 60px;
-      left: 140px;
-    }
-
-    &__label-title {
-      width: 207px;
-    }
-
-    &__form {
-      position: relative;
       flex-wrap: wrap;
     }
 
-    &__label-title {
-      margin-bottom: 20px;
-      margin-left: 37px;
-      margin-top: 60px;
+    &__div-logo {
+      text-align: center;
+      margin-right: 165px;
+    }
+
+    &__div-link {
+      margin-top: 10px;
+    }
+
+    &__link-subtitle {
+      text-align: center;
+    }
+
+    &__form {
+      flex-wrap: wrap;
     }
 
     &__input {
       width: 450px;
-      height: 50px;
-      border-radius: 4px;
-      border: 1px solid map-get($map: $colors, $key: "border");
-      background-color: transparent;
-      margin-left: 20px;
-    }
-
-    &__form-button {
-      margin-top: 20px;
-      margin-left: 40px;
-    }
-
-    &__form-svg {
-      position: absolute;
-      right: 140px;
-      top: 84px;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    display: flex;
-    height: 250px;
-    position: relative;
-
     &__div-logo {
-      position: absolute;
-      text-align: center;
-      left: -50px;
+      text-align: start;
+      margin-right: 70px;
+    }
+
+    &__list {
+      justify-content: start;
+      align-items: start;
     }
 
     &__div-link {
-      position: absolute;
-      margin-top: 60px;
-      left: 0;
-      right: 350px;
+      margin-right: 93px;
+    }
+
+    &__link-subtitle {
+      text-align: start;
     }
 
     &__modal {
-      position: absolute;
-      width: 570px;
-      height: 90px;
-      left: 790px;
-      margin-bottom: 55px;
+      margin-top: 0;
     }
 
     &__label-title {
-      margin-right: 700px;
-      padding-top: 60px;
+      text-align: start;
     }
 
     &__form {
-      position: relative;
-      width: 580px;
-      height: 50px;
-      margin-bottom: 65px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
     &__input {
-      width: 350px;
-      height: 50px;
-      border-radius: 4px;
-      margin-right: 150px;
+      width: 358px;
     }
 
     &__form-button {
-      width: 200px;
+      margin-top: 0;
     }
 
     &__form {
       &-svg {
-        position: absolute;
-        right: 200px;
-        top: 74px;
       }
     }
   }
