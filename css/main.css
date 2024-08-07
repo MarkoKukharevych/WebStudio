@@ -1086,9 +1086,6 @@ body {
 
 /* mobile menu */
 @media screen and (max-width: 767px) {
-  nav {
-    order: 1;
-  }
   .burger__label {
     display: block;
     height: 30px;
@@ -1111,7 +1108,7 @@ body {
     height: 2px;
     background: #333;
     position: absolute;
-    z-index: 5;
+    z-index: 10;
     right: 0;
     transition: 0.3s;
   }
@@ -1122,8 +1119,10 @@ body {
     top: 8px;
   }
   .burger__input[type=checkbox]:checked ~ .mobile__menu {
-    display: flex;
-    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
   }
   .burger__input[type=checkbox]:checked ~ .burger__label span {
     transform: rotate(-45deg);
@@ -1137,19 +1136,22 @@ body {
     transform: rotate(90deg);
   }
   .mobile__menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     width: 100vw;
     height: 100vh;
-    padding: 48px 40px;
     background: #FFF;
     transform: translateX(100%);
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 48px 40px;
   }
   .mobile__nav-item {
     margin-bottom: 32px;
